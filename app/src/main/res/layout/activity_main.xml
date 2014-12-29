@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ScrollView style="@style/DefaultScroll">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/act_http"
+                style="@style/Card">
+
+                <TextView
+                    style="@style/CardHeading"
+                    android:text="HTTP" />
+
+                <TextView
+                    style="@style/CardText"
+                    android:text="Use the HTTP API to send messages." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/act_rest"
+                style="@style/Card">
+
+                <TextView
+                    style="@style/CardHeading"
+                    android:text="REST" />
+
+                <TextView
+                    style="@style/CardText"
+                    android:text="Use the REST API to send messages." />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
